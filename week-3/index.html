@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Add our metadata -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Week 3 | Working with Media & An Intro to CSS</title>
+        <meta name="description" content="This week we will continue with our HTML and start adding some basic styling to our page.">
+        <meta name="robots" content="noindex, nofollow">
+        <!-- Add our CSS link -->
+        <!--
+        - ./: Tells the browser to start looking in the current directory (the folder where the current HTML file is saved)
+        - css/: Moves into the folder named "css".
+        - style.css: Targets the specific stylesheet file inside that folder.
+        -->
+        <link rel="stylesheet" href="./css/style.css"> 
+    </head>
+    <body>
+        <header>
+            <img src="./img/lorem-logo.png" alt="header logo">
+            <nav>
+                <menu>
+                    <li><a href="index.html">Link One</a></li>
+                    <li><a href="index.html">Link Two</a></li>
+                    <li><a href="index.html">Link Three</a></li>
+                </menu>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <div>
+                    <h1>This is an Introduction Title</h1>
+                </div>
+            </section>
+            <section>
+                <!-- this div will hold an image -->
+                <div>
+                    <!-- I am using a figure here simply so I can use the figcaption! -->
+                     <figure>
+                        <img src="./img/toronto.jpg" alt="this is used to describe the image">
+                        <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptas omnis deserunt enim nesciunt nulla?</figcaption>
+                     </figure>
+                </div>
+                <!-- this div will hold an h2 and a paragraph -->
+                <div>
+                    <h2>I am a Title</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi sit doloremque est ipsam adipisci, nesciunt modi quam quasi recusandae aliquid magnam porro cumque ex voluptates autem soluta, laudantium ipsum, libero quod voluptatibus? Earum, dignissimos animi eum dolor excepturi laborum dolore placeat at ut eveniet et voluptatibus illum libero adipisci ullam sapiente. Provident nihil magnam neque voluptates quidem itaque vitae, repellat odit sequi, laudantium qui minus!</p>
+                </div>
+            </section>
+            <!-- This next section will hold the video examples -->
+            <section>
+                <div>
+                    <h3>iframe Example</h3>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/X1aFkAkFASk?si=2oPyqOBQxVBOKXhJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <h3>HTML Video Player Example</h3>
+                    <video controls poster="./img/toronto.jpg" preload="metadata">
+                        <!-- Main MP4 video source -->
+                        <source src="./video/toronto.mp4" type="video/mp4">
+                        <!-- Normally we add a fallback video format just incase our first one is not supported. -->
+                        <!-- Fallback message for very old browsers -->
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </section> 
+        </main>
+        <footer>
+            <h6>&copy; Week 3 Lesson</h6>
+        </footer>
+    </body>
+</html>
