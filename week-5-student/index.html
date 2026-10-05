@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="This week we will be using Flexbox for our layout">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Your Construction Company</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- Link to our CSS file. The ../ is not needed because css/ is inside this folder. -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER: logo, navigation links and phone number ===== -->
+  <header>
+    <a href="index.html">
+      <!-- The small hard hat icon fits the header better than the full logo -->
+      <img src="./img/logo.png" alt="Your Construction Company logo" class="header-logo">
+    </a>
+    <nav>
+      <menu>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </menu>
+    </nav>
+    <p class="header-phone">705.123.4567</p>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO: big image with a heading and two buttons ===== -->
+    <section class="hero">
+      <div class="mask">
+        <h1>Residential Construction</h1>
+        <div>
+          <a href="#" class="button-yellow">Past Projects</a>
+          <a href="#services" class="button-yellow">Services</a>
+        </div>
+        <!-- The three dots below the hero (just a visual, no sliding yet) -->
+        <p class="hero-dots">
+          <span class="dot dot-filled"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT US: image on the left, text on the right ===== -->
+    <section class="about" id="about">
+      <div class="about-box">
+        <img src="./img/blueprints-one.jpg" alt="Blueprints and tools on a table">
+        <div>
+          <h2>About Us</h2>
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+        </div>
+        <a href="#" class="button-outline">Find Out More</a>
+      </div>
+    </section>
+
+    <!-- ===== PAST PROJECTS: black label on the left, two photos on the right ===== -->
+    <section class="projects">
+      <div class="projects-label">
+        <h2>Past Projects</h2>
+        <p class="arrows">&lt; &gt;</p>
+      </div>
+      <img src="./img/slide-one.jpg" alt="House frame under construction">
+      <img src="./img/slide-two.jpg" alt="Worker hammering on a roof">
+    </section>
+
+    <!-- ===== SERVICES: three columns, one article for each service ===== -->
+    <section class="services" id="services">
+      <div>
+        <img src="./img/icon-house.png" alt="House icon">
+        <h3>Residential</h3>
+        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration</p>
+        <a href="#" class="button-outline">Learn More</a>
+      </div>
+      <div>
+        <img src="./img/icon-building.png" alt="Building icon">
+        <h3>Industrial</h3>
+        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration</p>
+        <a href="#" class="button-outline">Learn More</a>
+      </div>
+      <div>
+        <img src="./img/icon-ladder.png" alt="Ladder icon">
+        <h3>Renovations</h3>
+        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration</p>
+        <a href="#" class="button-outline">Learn More</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER: logo, contact info, copyright ===== -->
+  <footer id="contact">
+    <section class="footer-columns">
+      <div>
+        <a href="index.html">
+          <img src="./img/logo.png" alt="Your Construction Company logo">
+        </a>
+      </div>
+      <div>
+        <!-- A heading can't go inside <address>, so it sits just above it -->
+        <h3>Contact Info</h3>
+        <address>
+          <ul>
+            <li>Tel: 705.123.4567</li>
+            <li>Email: abc@email.ca</li>
+            <li>123 Some Road</li>
+            <li>Barrie, ON.</li>
+          </ul>
+        </address>
+      </div>
+    </section>
+    <p class="copyright">2026 &copy; Week 5 Lesson</p>
+  </footer>
+</body>
+</html>
